@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SpeechActivity" >
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="ElizabethApp "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter City or Zip code"
+            android:inputType="textPersonName"
+            android:text="Enter City" />
+
+
+        <Button
+            android:id="@+id/locButton"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onGPSClick"
+            android:text="Go" />
+
+        <Button
+            android:id="@+id/btnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hear" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="bottom|center_horizontal"
+        android:inputType="textPersonName"
+        android:text="Elizabeth Garcia Z23425434" />
+
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+
+android:id="@+id/bottom_navigation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:foregroundGravity="bottom"
+app:itemBackground="?attr/colorPrimary"
+app:itemIconTint="@android:color/white"
+app:itemTextColor="@android:color/white"
+app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+

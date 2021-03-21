@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ElizabethApp</string>
+    <string name="API_KEY">474af4a95b5660971deb41b2a0e14703</string>
+    <string name="WEATHER_URL">https://api.openweathermap.org/data/2.5/weather?q=QUERY_REPLACE&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="WEATHER_URL_GPS">https://api.openweathermap.org/data/2.5/weather?lat=LAT_REPLACE&amp;lon=LON_REPLACE&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="WEATHER_HISTORY">http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=60.99&amp;lon=30.9&amp;dt=1586468027&amp;appid=API_KEY</string>
+</resources>

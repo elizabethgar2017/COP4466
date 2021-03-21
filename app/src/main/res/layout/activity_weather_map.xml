@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeatherMapActivity">
+
+    <TextView
+        android:id="@+id/cityMapView"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Map" />
+    <TextView
+        android:id="@+id/cityView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="City Name" />
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Temp" />
+
+    <TextView
+        android:id="@+id/humidityView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Humidity" />
+
+    <TextView
+        android:id="@+id/latView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Latitude" />
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.elizabethapp.MapsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="341dp" />
+
+</LinearLayout>
